@@ -13,7 +13,7 @@ class App extends Component {
         <Wrapper>
           <Navbar>
           </Navbar>
-          <Jumbotron></Jumbotron>
+          <Jumbotron/>
 
 
 
@@ -21,7 +21,7 @@ class App extends Component {
 
 
 
-          <Footer></Footer>
+          <Footer/>
         </Wrapper>
       </div>
     );
