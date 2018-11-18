@@ -7,7 +7,7 @@ const Navbar = props => (
   <nav className="navbar navigation navbar-light shadow-lg p-3 mb-5">
   <a className="navbar-brand text-white" href="/">Clicky Game</a>
   <span className="navbar-text text-white mx-auto">
-    Click an image to begin!
+    
   </span>
 </nav>
 );
