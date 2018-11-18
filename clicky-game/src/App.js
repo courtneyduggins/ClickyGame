@@ -55,14 +55,13 @@ endGame = () => {
     return (
       <div>
         <Wrapper>
-
           <Navbar>
-          {/* message = {this.state.message}
-          score = {this.state.score}|topScore = {this.state.topScore} */}
+          message = {this.state.message}
+          score = {this.state.score}
+          topScore = {this.state.topScore}
           </Navbar>
           <Jumbotron/>
 
-       
         {this.state.princesses.map(princess => (
             <Cards 
               ref={instance => {this.Cards = instance;}}

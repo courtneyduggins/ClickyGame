@@ -5,3 +5,7 @@ footer {
     color: #fff;
     overflow: auto;
 }
+
+p {
+    text-align: left;
+}
