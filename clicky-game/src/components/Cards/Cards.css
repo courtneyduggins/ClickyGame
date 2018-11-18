@@ -24,18 +24,19 @@
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 15px;
+  float: right;
 }
 
-.card > .content > ul {
+/* .card > .content > ul {
   list-style-type: none;
-}
+} */
 
-.card > .content > ul > li {
+/* .card > .content > ul > li {
   margin-top: 18px;
-}
+} */
 
 .card > .remove {
-  color: #ff1744;
+  color:  black;
   font-size: 48px;
   position: absolute;
   top: -20px;
@@ -44,5 +45,5 @@
 }
 
 .card > .remove:hover {
-  color: #d50000;
+  color: black;
 }

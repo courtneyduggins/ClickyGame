@@ -4,5 +4,9 @@ nav.navbar.navbar-default {
 
 .navigation {
   background-color: blueviolet;
+  
 }
 
+p {
+  color: white;
+}

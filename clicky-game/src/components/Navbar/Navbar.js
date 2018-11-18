@@ -6,9 +6,8 @@ import "./Navbar.css";
 const Navbar = props => (
   <nav className="navbar navigation navbar-light shadow-lg p-3 mb-5">
   <a className="navbar-brand text-white" href="/">Clicky Game</a>
-  <span className="navbar-text text-white mx-auto">
-    
-  </span>
+  <p>{props.message}</p>
+  <p> Score: {props.score} | Top Score: {props.topScore}</p>
 </nav>
 );
 

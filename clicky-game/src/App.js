@@ -24,7 +24,7 @@ class App extends Component {
 shuffle = () => {
   console.log("Shuffling...");
   const princesses = this.state.princesses;
-  for (var i = 0; i < princesses.lenght-1; i++){
+  for (var i = 0; i < princesses.length-1; i++){
     var j = i + Math.floor(Math.random() * (princesses.length - i ));
     var placeholder = princesses[j];
     princesses[j] = princesses[i];
@@ -55,9 +55,10 @@ endGame = () => {
     return (
       <div>
         <Wrapper>
+
           <Navbar>
-          message = {this.state.message}
-          score = {this.state.score}|topScore = {this.state.topScore}
+          {/* message = {this.state.message}
+          score = {this.state.score}|topScore = {this.state.topScore} */}
           </Navbar>
           <Jumbotron/>
 
