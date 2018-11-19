@@ -12,7 +12,7 @@ import './App.css';
 class App extends Component {
 
   state = {
-    message: "Click an image to begin",
+    message: "Click an image to begin!",
     princesses,
     score: 0,
     topScore: 0,
@@ -32,18 +32,32 @@ shuffle = () => {
   }
 
   this.setState({princesses});
+  
 };
 
 changeScore = () => {
   console.log("Score :", this.state.score);
-  this.setState({score: this.state.score + 1});
+  this.setState({
+    score: this.state.score + 1,
+    message: "You guessed correctly!"
+  });
+  console.log(this.state.message);
 };
 
 endGame = () => {
   if (this.state.score > this.state.topScore){
-    this.setState({topScore: this.state.score});
-    this.setState({message: "Yay! Top Score!! Play Again!"})
-  }
+    this.setState({
+      topScore: this.state.score,
+      message: "Opps! Try again..."
+      
+    });
+    console.log(this.state.message);
+  }else if (this.state.score > 11) {
+    this.setState({
+      message: "You win!  There are no more unique images to select."
+    });
+    console.log(this.state.message);
+  } 
     this.setState({ score: 0 });
     this.setState({ currentGame: this.state.currentGame + 1});
     this.forceUpdate();
@@ -56,9 +70,9 @@ endGame = () => {
       <div>
         <Wrapper>
           <Navbar>
-          message = {this.state.message}
-          score = {this.state.score}
-          topScore = {this.state.topScore}
+          message={this.state.message}
+          score={this.state.score}
+          topScore={this.state.topScore}
           </Navbar>
           <Jumbotron/>
 
@@ -70,6 +84,7 @@ endGame = () => {
               shuffle={this.shuffle}
               score={this.state.score}
               currentGame={this.state.currentGame}
+              message={this.state.message}
               id={princess.id}
               key={princess.id}
               image={princess.image}

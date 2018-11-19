@@ -7,7 +7,6 @@ class Cards extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            message: "Click an image to begin!",
             count: 0,
             currentGame: 1,
             score: 0,
@@ -25,7 +24,7 @@ class Cards extends Component {
         if (parseInt(nextProps.currentGame) !== parseInt(this.state.currentGame)) {
             this.setState({ count: 0 });
             this.setState({ currentGame: nextProps.currentGame });
-            console.log("Princess reset: ", this.props.name);
+            // console.log("Princess reset: ", this.props.name);
         }
     }
 

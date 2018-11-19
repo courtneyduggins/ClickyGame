@@ -27,13 +27,13 @@
   float: right;
 }
 
-/* .card > .content > ul {
+.card > .content > ul {
   list-style-type: none;
-} */
+}
 
-/* .card > .content > ul > li {
+.card > .content > ul > li {
   margin-top: 18px;
-} */
+}
 
 .card > .remove {
   color:  black;
